@@ -1,0 +1,55 @@
+2008-01-25  Satoshi Nakagawa <artension@gmail.com>
+
+	Release: 0.6.
+
+	* app/src/AppController.m:
+	- Do not change the input source state when the next active application is Thunderbird.
+
+2007-11-18  Satoshi Nakagawa <artension@gmail.com>
+
+	Release: 0.5.
+
+	* app/src/AppController.m,
+	  bundle/src/PSInputSwitcherHook.m:
+	Improved Quicksilver support. Always select an ASCII input source.
+
+2007-11-17  Satoshi Nakagawa <artension@gmail.com>
+
+	Release: 0.4.
+
+	* app/src/AppController.m,
+	  app/src/PSInputSource.{h|m},
+	  bundle/src/PSInputSwitcherHook.m:
+	Supported Quicksilver. Thanks to kumura wataru.
+
+2007-11-12  Satoshi Nakagawa <artension@gmail.com>
+
+	Release: 0.3.
+
+	* app/src/AppController.m:
+	Improved to select an ASCII capable input source when an application starts up.
+
+	* app/src/PSInputSource.{h|m}:
+	Renamed PSInputSourceRef to PSInputSource.
+	Added currentAsciiInputSource method.
+
+2007-11-10  Satoshi Nakagawa <artension@gmail.com>
+
+	Release: 0.2.
+
+	* bundle/src/PSInputSwitcherHook.{h|m}:
+	- Renamed PSInputSourceSwitch to PSInputSwitcherHook.
+	- Improved to use +install for installing notification hooks.
+	  Thanks to kimura wataru.
+	- Changed to send bundleIdentifier to the server.
+
+	* app/src/AppController.m:
+	- Do not change the input source state when the next active application is Firefox.
+	  Workaround for the Firefox's input source locking problem.
+
+	* app/src/PrefUtil.m:
+	Fixed a memory leak around CF values.
+
+2007-11-08  Satoshi Nakagawa <artension@gmail.com>
+
+	The first release: 0.1.
