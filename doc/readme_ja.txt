@@ -71,7 +71,7 @@ https://bugreport.apple.com/
 
 バグ報告・要望などあれば、ご連絡ください。
 
-Satoshi Nakagawa <artension@gmail.com>
+Satoshi Nakagawa <psychs AT limechat DOT net>
 http://d.hatena.ne.jp/Psychs/
 #limechat on irc.freenode.net
 
