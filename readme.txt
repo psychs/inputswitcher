@@ -42,13 +42,12 @@ Due to the current implementation, there are several constraints.
 It works only on Cocoa applications.  So applications listed below woundn't work.
 
   - Finder
-  - Firefox
   - Thunderbird
   - iTunes
 
 But for such a kind of applications, InputSwitcher saves the global state and apply it to them.  So it should not be a problem ordinally.
 
-Especially Firefox and Thunderbird seems to have a problem.  Sometimes it locks the input source state after changing the input source state on activate.  Therefore InputSwitcher doesn't restore the input source state only when the focus moved to Firefox or Thunderbird from other applications.  It's a workaround for Firefox and Thunderbird.
+Especially Thunderbird seems to have a problem.  Sometimes it locks the input source state after changing the input source state on activate.  Therefore InputSwitcher doesn't restore the input source state only when the focus moved to Thunderbird from other applications.  It's a workaround for Thunderbird.
 
 *** Please send your bug report to Apple
 
