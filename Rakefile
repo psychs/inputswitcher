@@ -2,15 +2,15 @@ require 'pathname'
 require 'fileutils'
 
 APP_SHORT_NAME = 'InputSwitcher'
-APP_NAME = SHORT_NAME + '.app'
+APP_NAME = APP_SHORT_NAME + '.app'
 BUNDLE_NAME = 'InputSwitcherClient.bundle'
 
 ROOT_PATH = Pathname.new(__FILE__).dirname
 APP_PATH = Pathname.new(__FILE__).dirname + 'app'
 BUNDLE_PATH = Pathname.new(__FILE__).dirname + 'bundle'
 
-TMP_PATH = Pathname.new("/tmp/#{SHORT_NAME}_build_image")
-TMP_SOURCE_PATH = Pathname.new("/tmp/#{SHORT_NAME}_source")
+TMP_PATH = Pathname.new("/tmp/#{APP_SHORT_NAME}_build_image")
+TMP_SOURCE_PATH = Pathname.new("/tmp/#{APP_SHORT_NAME}_source")
 SOURCE_ZIP_PATH = TMP_SOURCE_PATH + "source.zip"
 DESKTOP_PATH = Pathname.new('~/Desktop').expand_path
 BUILT_APP_PATH = APP_PATH + 'build/Release' + APP_NAME
@@ -46,7 +46,7 @@ task :package_source => :clean do |t|
 end
 
 task :package => :build do |t|
-	ZIP_PATH = DESKTOP_PATH + "#{SHORT_NAME}_#{app_version}.zip"
+	ZIP_PATH = DESKTOP_PATH + "#{APP_SHORT_NAME}_#{app_version}.zip"
 	ZIP_PATH.rmtree
 	TMP_PATH.rmtree
 	TMP_PATH.mkpath
