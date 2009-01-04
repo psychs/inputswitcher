@@ -114,7 +114,7 @@ static NSString* NOTE_QS_DEACTIVATE = @"InputSwitcherQSInterfaceDeactivated";
       NSDictionary* d = [[NSWorkspace sharedWorkspace] activeApplication];
       if (d) {
         NSString* aid = [d objectForKey:@"NSApplicationBundleIdentifier"];
-        if (aid && ([aid isEqualTo:@"org.mozilla.thunderbird"])) {
+        if (aid && [aid isEqualTo:@"org.mozilla.thunderbird"]) {
           // if the next active application is Thunderbird, don't restore
           allowChange = NO;
         }
