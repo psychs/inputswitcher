@@ -1,3 +1,8 @@
+2009-01-04  Satoshi Nakagawa <psychs@limechat.net>
+
+    Release: 1.0.
+    Removed work around for Firefox. Because it's a Cocoa app now.
+
 2008-01-25  Satoshi Nakagawa <artension@gmail.com>
 
 	Release: 0.6.
