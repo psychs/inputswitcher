@@ -63,7 +63,7 @@ https://bugreport.apple.com/
 * The Author
 
 Satoshi Nakagawa <psychs AT limechat DOT net>
-http://d.hatena.ne.jp/Psychs/ (in Japanese)
+http://limechat.net/psychs/
 #limechat on irc.freenode.net
 
 * License

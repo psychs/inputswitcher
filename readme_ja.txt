@@ -72,7 +72,7 @@ https://bugreport.apple.com/
 バグ報告・要望などあれば、ご連絡ください。
 
 Satoshi Nakagawa <psychs AT limechat DOT net>
-http://d.hatena.ne.jp/Psychs/
+http://limechat.net/psychs/
 #limechat on irc.freenode.net
 
 * ライセンス
